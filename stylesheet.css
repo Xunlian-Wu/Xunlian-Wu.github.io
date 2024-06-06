@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 14px
 }
 
 strong {
@@ -97,7 +97,7 @@ heading {
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 700
 }
 
 name {
@@ -128,48 +128,4 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
-}
-
-@media screen and (max-width: 768px) {
-  nav a {
-    display: inline-block;
-    padding: 10px;
-  }
-  .content {
-    padding-top: 80px;
-  }
-  td {
-    display: block;
-    width: 100%;
-    padding: 10px;
-  }
-  td img {
-    width: 100%;
-    height: auto;
-  }
-  table {
-    width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-  .centered {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  td {
-    display: table-cell;
-    padding: 2.5%;
-  }
-  td img {
-    width: 85%;
-    max-width: 100%;
-  }
-}
-
-.centered {
-  margin-right: auto;
-  margin-left: auto;
 }
