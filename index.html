@@ -8,11 +8,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-      nav {
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    nav {
       background-color: #6A0572; /* Primary Color */
       overflow: hidden;
       position: fixed; /* Fixed position */
@@ -22,19 +22,23 @@
       text-align: center; /* Center the navigation links */
     }
     nav a {
-      display: inline-block;
+      display: block; /* Adjust to block display for individual full width */
       color: white;
-      padding: 14px 20px;
+      padding: 10px 0; /* Adjust padding vertically */
       text-decoration: none;
       text-align: center;
+      width: 50%; /* Each link takes half the width of the nav bar */
+      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
     }
     nav a:hover {
       background-color: #B24080; /* Secondary Color */
       color: black;
     }
     .content {
-      padding-top: 60px; /* Adjust to avoid content overlap with navbar */
+      padding-top: 80px; /* Adjust to avoid content overlap with navbar */
     }
+
+    /* Responsive styles for mobile devices */
     @media (max-width: 600px) {
       nav {
         display: flex;
@@ -46,6 +50,7 @@
         font-size: 12px; /* Adjust font size to ensure readability */
       }
     }
+
     .projects-box {
       height: 160px;
        background-color: #F5F7FA;
