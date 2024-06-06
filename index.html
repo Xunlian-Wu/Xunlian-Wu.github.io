@@ -35,6 +35,18 @@
     .content {
       padding-top: 60px; /* Adjust to avoid content overlap with navbar */
     }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /* Distributes space evenly between links */
+      }
+      nav a {
+        flex-grow: 1; /* Allows each link to expand and fill the space */
+        padding: 10px 6px; /* Adjust padding for smaller screens */
+        font-size: small; /* Reduce font size for small screens */
+      }
+    }
     .projects-box {
       height: 160px;
        background-color: #F5F7FA;
