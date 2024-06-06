@@ -36,18 +36,16 @@
       padding-top: 60px; /* Adjust to avoid content overlap with navbar */
     }
     @media (max-width: 600px) {
-        nav {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around; /* Distributes space evenly between links */
-        }
-        nav a {
-          flex-grow: 1; /* Allows each link to expand and fill the space */
-          padding: 10px 4px; /* Reduce padding for smaller screens */
-          font-size: 12px; /* Reduce font size to fit more items */
-          text-align: center;
-        }
+      nav {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap as needed onto multiple lines */
       }
+      nav a {
+        flex: 1 1 50%; /* Flex-grow, flex-shrink and flex-basis set to 50% */
+        padding: 8px 4px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Adjust font size to ensure readability */
+      }
+    }
     .projects-box {
       height: 160px;
        background-color: #F5F7FA;
