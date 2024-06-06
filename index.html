@@ -8,10 +8,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
     nav {
       background-color: #6A0572; /* Primary Color */
       overflow: hidden;
@@ -19,37 +19,33 @@
       width: 100%; /* Full width */
       top: 0; /* At the top */
       z-index: 1000; /* Stay on top of other elements */
+      white-space: nowrap; /* Prevents the text within the nav from wrapping */
       text-align: center; /* Center the navigation links */
     }
     nav a {
-      display: block; /* Adjust to block display for individual full width */
+      display: inline-block;
       color: white;
-      padding: 10px 0; /* Adjust padding vertically */
+      padding: 10px 8px; /* Reduced padding */
       text-decoration: none;
       text-align: center;
-      width: 50%; /* Each link takes half the width of the nav bar */
-      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+      font-size: 12px; /* Reduced font size */
     }
     nav a:hover {
       background-color: #B24080; /* Secondary Color */
       color: black;
     }
     .content {
-      padding-top: 80px; /* Adjust to avoid content overlap with navbar */
+      padding-top: 60px; /* Adjust to avoid content overlap with navbar */
     }
 
-    /* Responsive styles for mobile devices */
+    /* Ensures that the navbar remains a single line even on smaller screens */
     @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-wrap: wrap; /* Allows items to wrap as needed onto multiple lines */
-      }
       nav a {
-        flex: 1 1 50%; /* Flex-grow, flex-shrink and flex-basis set to 50% */
-        padding: 8px 4px; /* Adjust padding for smaller screens */
-        font-size: 12px; /* Adjust font size to ensure readability */
+        padding: 10px 6px; /* Further reduce padding on smaller screens */
       }
     }
+
+
 
     .projects-box {
       height: 160px;
