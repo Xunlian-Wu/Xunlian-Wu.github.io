@@ -36,17 +36,18 @@
       padding-top: 60px; /* Adjust to avoid content overlap with navbar */
     }
     @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; /* 均匀分布链接 */
+        nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; /* Distributes space evenly between links */
+        }
+        nav a {
+          flex-grow: 1; /* Allows each link to expand and fill the space */
+          padding: 10px 4px; /* Reduce padding for smaller screens */
+          font-size: 12px; /* Reduce font size to fit more items */
+          text-align: center;
+        }
       }
-      nav a {
-        flex-grow: 1; /* 允许链接扩展填充空间 */
-        padding: 10px 4px; /* 缩小边距以适应更小的屏幕 */
-        font-size: smaller; /* 进一步减小字体大小 */
-      }
-    }
     .projects-box {
       height: 160px;
        background-color: #F5F7FA;
