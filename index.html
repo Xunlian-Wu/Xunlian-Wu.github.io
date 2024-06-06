@@ -12,7 +12,7 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
-      nav {
+    nav {
       background-color: #6A0572; /* Primary Color */
       overflow: hidden;
       position: fixed; /* Fixed position */
@@ -37,7 +37,7 @@
     }
     .projects-box {
       height: 160px;
-       background-color: #F5F7FA;
+      background-color: #F5F7FA;
       position: relative;
       overflow: hidden;
       transition: all ease-in .1s;
@@ -61,11 +61,43 @@
       position: relative;
       top: 10px;
     }
+    table {
+      width: 100%;
+      max-width: 800px;
+      border: 0px;
+      border-spacing: 0px;
+      border-collapse: separate;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media screen and (max-width: 768px) {
+      nav a {
+        display: block;
+        padding: 10px;
+      }
+      .content {
+        padding-top: 80px; /* More padding for smaller screens */
+      }
+      td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+      }
+      td img {
+        width: 100%;
+        height: auto;
+      }
+      table {
+        width: 100%;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    }
   </style>
 </head>
-
 <body>
-<nav>
+  <nav>
     <a href="#home"><font size="4">Home</font></a>
     <a href="#news"><font size="4">News</font></a>
     <a href="#research"><font size="4">Research</font></a>
@@ -77,391 +109,376 @@
 
   <div class="content">
     <a id="home"></a>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table>
       <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p style="text-align:center">
-                      <name>Xunlian Wu</name>
-                    </p>
-                    <p style="text-align:justify">
-                      Xunlian Wu (仵训练) is a PhD candidate 🎓 in the School of Computer Science and Technology at <a href="https://en.xidian.edu.cn/">Xidian University (XDU)</a>. During his master's studies, he was supervised by Prof. <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a> in the State Key Laboratory of Integrated Services Networks. In his PhD program, he is supervised by Prof. <a href="https://web.xidian.edu.cn/">Peng Gang Sun</a> at the Xi'an Key Laboratory of Big Data and Visual Intelligence. His research interests include graph neural networks, graph clustering, and community detection.
-                    </p>
-                    <p style="text-align:center">
-                      <a href="wuxunlian@gmail.com">Email</a> &nbsp/&nbsp
-                      <a href="https://scholar.google.com/citations?hl=zh-CN&user=sBvSsyYAAAAJ/">Google Scholar</a> &nbsp/&nbsp
-                      <a href="https://twitter.com/yimeishan">Twitter</a> &nbsp/&nbsp
-                      <a href="https://github.com/Xunlian-Wu/">Github</a> &nbsp/&nbsp
-                      <a href="https://www.researchgate.net/profile/Xunlian_Wu/research">Researchgate</a> 
-                    </p>
-                  </td>
-                  <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/xunlianwu.png"><img style="width:85%;max-width:100%" alt="profile photo" src="images/xunlianwu.png" class="hoverZoomLink"></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <a id="news"></a>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <heading>📰News</heading>
-                    <ul class="projects-box" id="projects-box">
-                      <li><b>[<font color="red">2024.03</font>]</b> ✌️ I received Research and Innovation Funds of Xidian University funding.</li>
-                      <li><b>[<font color="red">2023.12</font>]</b> ✌️ I won Outstanding Graduate Student.</li>
-                      <li><b>[<font color="red">2023.11</font>]</b> ✌️ I received Outstanding Doctoral Dissertation Funding.</li>
-                      <li><b>[<font color="red">2023.10</font>]</b> ✌️ I won Tencent Social Scholarship.</li>
-                      <li><b>[<font color="red">2023.10</font>]</b> ✌️ One paper has been accepted by <em>ESWA</em>.</li>
-                      <li><b>[<font color="red">2023.09</font>]</b> ✌️ One paper has been accepted by <em>Physica A</em>.</li>
-                      <li><b>[<font color="red">2022.12</font>]</b> ✌️ I won Outstanding Graduate Student.</li>
-                      <li><b>[<font color="red">2022.10</font>]</b> ✌️ I won Tencent Social Scholarship.</li>
-                      <li><b>[<font color="red">2022.09</font>]</b> ✌️ I won first-class scholarship for doctoral students.</li>
-                      <li><b>[<font color="red">2022.05</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-KDE</em>.</li>
-                      <li><b>[<font color="red">2022.02</font>]</b> ✌️ One paper has been accepted by <em>Physica A</em>.</li>
-                      <li><b>[<font color="red">2021.09</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-PAMI</em>.</li>
-                      <li><b>[<font color="red">2021.03</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-CYB</em>.</li>
-                      <p class="projects-show" id="projects-show"><span class="projects-show-text" id="projects-show-text">More</span></p>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <a id="research"></a>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <heading>👨🏻‍💻Research</heading>
-                    <p>My research interests mainly include social network analysis, self-supervised learning and graph neural networks. I'm also interested in their applications such as community detection, influence maximization, deep graph clustering,recommendation and bioinformatics. <font color="red">* denotes corresponding author</font>. The selected papers are listed as follows:</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--        paper_list-->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/DLTD.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/201367/preprint_pdf/ed79da65fd016277b76675643e40ffc4.pdf">
-                      <papertitle>Dynamic linear threshold model with decay for influence spread</papertitle>
-                    </a>
-                    <br>
-                    <strong>Xunlian Wu</strong>,
-                    Anqi Zhang,
-                    <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
-                    Peng Gang Sun*
-                    <br>
-                    <em>TechRxiv</em>, 2024
-                    <br>
-                    <a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/201367/preprint_pdf/ed79da65fd016277b76675643e40ffc4.pdf">Paper</a>
-                    /
-                    <a href="">Code</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      The complexity of influence spread poses significant challenges to its accurate modeling. Traditional approaches, such as the Linear Threshold (LT) model, offer a simplified depiction of this phenomenon but overlook the temporal decay of influence. To address this limitation, we introduce a Dynamic Linear Threshold Model with Decay (DLTD), incorporating three distinct decay strategies: random decay, linear decay, and nonlinear decay. Comparative analyses on real-world datasets reveal that DLTD achieves superior accuracy over the LT model.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/DDGAE.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026842">
-                      <papertitle>Deep Dual Graph attention Auto-Encoder for community detection</papertitle>
-                    </a>
-                    <br>
-                    <strong>Xunlian Wu</strong>,
-                    Wanying Lu,
-                    <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
-                    Peng Gang Sun*
-                    <br>
-                    <em>Expert Systems with Applications</em>, 2024.
-                    <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026842">Paper</a>
-                    /
-                    <a href=" https://doi.org/10.24433/CO.2474269.v1">Code</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      We propose an unsupervised method for community detection based on a Deep Dual Graph attention Auto-Encoder (DDGAE). For a graph, the DDGAE considers its attribute information and modularity information as two views, and learns a common representation based on a self-training process during which we can also determine the community assignment.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/GEMFP.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0378437123007604">
-                      <papertitle>Graph embedding based on motif-aware feature propagation for community detection</papertitle>
-                    </a>
-                    <br>
-                    <strong>Xunlian Wu</strong>,
-                    Han Zhang,
-                    <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
-                    Peng Gang Sun*
-                    <br>
-                    <em>Physica A: Statistical Mechanics and its Applications</em>, 2023
-                    <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0378437123007604">Paper</a>
-                    /
-                    <a href="https://github.com/zhanghan1020/GEMFP">Code</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      Identifying communities plays an essential role in disclosing modular structures with specific functions or properties in different kinds of complex networks. We develops a novel algorithm, Graph Embedding based on Motifaware Feature Propagation (GEMFP) for community detection. We conduct extensive experiments on 14 real-world datasets, and the results show that our algorithm tends to be more effective for community detection.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/RaidB.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9771068/">
-                      <papertitle>Rearranging 'indivisible' blocks for community detection</papertitle>
-                    </a>
-                    <br>
-                    Peng Gang Sun*,
-                    <strong>Xunlian Wu</strong>,
-                    <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
-                    <br>
-                    <em>IEEE Transactions on Knowledge and Data Engineering</em>, 2022
-                    <br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9771068/">Paper</a>
-                    /
-                    <a href="https://github.com/Xunlian-Wu/RaidB">Code</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      Nowadays, communities strongly overlap due to the fact that people strongly interact, which makes community detection even more challenging. The paper develops a new algorithm by rearranging ‘indivisible’ blocks(RaidB). We compare RaidB with the existing state of the art methods for non-overlapping and overlapping community detection. The results show that RaidB tends to achieve better performance especially on sparse networks with unobvious communities and networks with strongly overlapping communities.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/IPM.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0378437122001376">
-                      <papertitle>Influence percolation method for overlapping community detection</papertitle>
-                    </a>
-                    <br>
-                    Peng Gang Sun*,
-                    <strong>Xunlian Wu</strong>,
-                    <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>
-                    <br>
-                    <em>Physica A: Statistical Mechanics and its Applications</em>, 2022
-                    <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0378437122001376">Paper</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      Nowadays, boundaries between circles are more and more indistinct because people probably involve more than one circle. We develops an influence percolation method (IPM) for identifying overlapping communities. An interesting finding is that two nodes tend to be indivisible if one is a seed, influence percolates into the other exceeding a certain frequency, and this threshold is mainly determined by the networks’ density.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/Tel.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9543564/">
-                      <papertitle>TelecomNet: Tag-based weakly-supervised modally cooperative hashing network for image retrieval</papertitle>
-                    </a>
-                    <br>
-                    <a href="https://faculty.xidian.edu.cn/ZW6/zh_CN/index.htm">Wei Zhao</a>,
-                    <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu, </a>
-                    <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a>*,
-                    <strong>Xunlian Wu</strong>,
-                    Wanqing Zhao,
-                    <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao, </a>
-                    <a href="https://person.zju.edu.cn/0007101">Xiaofei He, </a>
-                    <a href="https://web.xidian.edu.cn/wangquan/">Quan Wang</a>
-                    <br>
-                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 2021
-                    <br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9543564/">Paper</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      We are concerned with using user-tagged images to learn proper hashing functions for image retrieval. However, tagging data suffers from noises, vagueness and incompleteness. Different from previous unsupervised or supervised hashing learning, we propose a novel weakly-supervised deep hashing framework which consists of two stages: weakly-supervised pre-training and supervised fine-tuning. The framework is general and does not depend on specific deep hashing methods.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/AIMC.png' width="160">
-                    </div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9382955/">
-                      <papertitle>Adversarial incomplete multiview subspace clustering networks</papertitle>
-                    </a>
-                    <br>
-                    <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu, </a>
-                    <a href="https://ai.ustb.edu.cn/szdw/xsszmjs/L/a991e2ba08ff4173ad16a5e9c406eb87.htm">Hongmin Liu</a>*,
-                    <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan,</a>
-                    <strong>Xunlian Wu</strong>,
-                    Jiale Tan,
-                    Beilei Ling
-                    <br>
-                    <em>IEEE Transactions on Cybernetics</em>, 2021
-                    <br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9382955/">Paper</a>
-                    <p></p>
-                    <p style="text-align:justify">
-                      Most previous works assumed that each view has complete data. However, in real-world datasets, it is often the case that a view may contain some missing data, resulting in the problem of incomplete multiview clustering (IMC). We present the adversarial IMC (AIMC) framework. We explore two variants of AIMC: 1) AAIMC and 2) GAIMC with different strategies for learning multiview common representation. AAIMC tries to capture hidden information of the missing data by MDI via the elementwise reconstruction and the GAN. GAIMC directly searches the multiview comprehensive representation and infers the information of the missing views from the instances of the same cluster.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <a id="project"></a>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>💻Project</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-              <tbody>
-                <ul>
-                  <li>Research and Innovation Funds of Xidian University: Research on Social Network Analysis and Community Detection Methods. [<font color="red"> NO.YISI24015</font>], <strong>Principal Investigator</strong></li>
-                  <p></p>
-                  <li>Outstanding Doctoral Dissertation Funding Project of Xidian University: Research on Influence Propagation and Community Detection Methods in Complex Networks. <strong>Principal Investigator</strong></li>
-                  <p></p>
-                  <li>National Natural Science Foundation of China: Research on Algorithms for Discovering Dynamic Controllability of Disease Networks and Pathogenic Factor-Related Patterns in the Context of Big Data. [<font color="red"> NO.61872432</font>], <strong>Participant</strong></li>
-                  <p></p>
-                  <li>National Natural Science Foundation of China: Analysis of Online Learning Behavior and Outcome Prediction Based on Knowledge Graphs. [<font color="red"> NO.6207021069</font>], <strong>Participant</strong></li>
-                  <p></p>
-                  <li>National Department Preliminary Research Project: A Certain Intelligent Cognitive Technology. [<font color="red"> NO.41412030502</font>], <strong>Participant</strong></li>
-                  <p></p>
-                  <li>Shaanxi Fundamental Science Research Project in Mathematics and Physics: Research on Renormalization of Big Data in Complex Networks and Hyperbolic Space Representation Learning Algorithms and Their Applications in Community Detection. [<font color="red"> NO.22JSY024</font>], <strong>Participant</strong></li>
-                  <p></p>
-                  <li>Central Universities Basic Scientific Research Fund Project: Research on Learning Resource Recommendation Methods Based on Community Structure and Deep Neural Networks. [<font color="red"> JB210303</font>], <strong>Participant</strong></li>
-                </ul>
-              </tbody>
-            </table>
-
-            <a id="experience"></a>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <heading>🚀Experience</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-              <tbody>
-                <ul>
-                  <li>PhD student @ <a href="https://en.xidian.edu.cn/">Xidian University</a>, supervised by Prof. <a href="https://web.xidian.edu.cn/">Peng Gang Sun</a>.</li>
-                  <li>Master of Engineering @ <a href="https://en.xidian.edu.cn/">Xidian University</a>, working with <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu</a>, supervised by Prof. <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a>.</li>
-                  <li>C++ Software Development Engineer @ <a href="https://en.kmerit.com/">Kmerit Co., Ltd.</a> and <a href="https://eng.spdb.com.cn/">SPD BANK</a>.</li>
-                  <li>Bachelor of Engineering @ <a href="http://english.zzu.edu.cn/">Zhengzhou University</a>.</li>
-                  <li>C++ Engineer Internship @ <a href="https://en.kmerit.com/">Kmerit Co., Ltd.</a></li>
-                  <li>Vice Captain @ <a href="http://www5.zzu.edu.cn/wzb/index.htm">Zhengzhou University National Flag Guard Team</a>.</li>
-                </ul>
-              </tbody>
-            </table>
-
-            <a id="service"></a>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>💁‍♂️Service</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-              <tbody>
-                <ul>
-                  <li>Reviewer for KDD'24</li>
-                  <li>Reviewer for ESWA</li>
-                  <li>Reviewer for Physica A</li>
-                  <li>Reviewer for Electronic Science and Technology(电子科技)</li>
-                </ul>
-              </tbody>
-            </table>
-
-            <a id="award"></a>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>🏆Award</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-              <tbody>
-                <ul>
-                  <li>Research and Innovation Funds of Xidian University(2024). [<a href="images/Research and Innovation Funds.pdf">PDF</a>]</li>
-                  <li>Outstanding Doctoral Dissertation Funding(2023). [<a href="images/Outstanding Doctoral.pdf">PDF</a>]</li>
-                  <li>Outstanding Graduate Student(2023). [<a href="images/National Scholarship 2022.pdf">PDF</a>]</li>
-                  <li>Tencent Social Scholarship(2023). [<a href="images/Scholarship.pdf">PDF</a>]</li>
-                  <li>Outstanding Graduate Student(2022). [<a href="images/Outstanding-22.pdf">PDF</a>]</li>
-                  <li>Tencent Social Scholarship(2022). [<a href="images/Tencent-22.pdf">PDF</a>]</li>
-                  <li>Outstanding Pandemic Voluntee. [<a href="images/yq.pdf">PDF</a>]</li>
-                  <li>Scholarship, XDU. [<a href="images/Scholarship-22.pdf">PDF</a>]</li>
-                </ul>
-              </tbody>
-            </table>
-
-            <p align="center">Design and source code from <a href="https://jonbarron.info/">Jon Barron</a>'s website</p>
-            <script>
-              let show = false;
-              document.querySelector('#projects-show').onclick = function() {
-                if (!show) {
-                  document.querySelector('#projects-box').style.height = 'auto';
-                  document.querySelector('#projects-box').style.paddingBottom = '20px';
-                  document.querySelector('#projects-show-text').innerHTML = 'Less';
-                  show = true;
-                } else {
-                  show = false;
-                  document.querySelector('#projects-box').style.height = '160px';
-                  document.querySelector('#projects-box').style.paddingBottom = '0px';
-                  document.querySelector('#projects-show-text').innerHTML = 'More';
-                }
-              }
-            </script>
+        <tr>
+          <td style="padding: 2.5%; width: 63%; vertical-align: middle;">
+            <p style="text-align: center;">
+              <name>Xunlian Wu</name>
+            </p>
+            <p style="text-align: justify;">
+              Xunlian Wu (仵训练) is a PhD candidate 🎓 in the School of Computer Science and Technology at <a href="https://en.xidian.edu.cn/">Xidian University (XDU)</a>. During his master's studies, he was supervised by Prof. <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a> in the State Key Laboratory of Integrated Services Networks. In his PhD program, he is supervised by Prof. <a href="https://web.xidian.edu.cn/">Peng Gang Sun</a> at the Xi'an Key Laboratory of Big Data and Visual Intelligence. His research interests include graph neural networks, graph clustering, and community detection.
+            </p>
+            <p style="text-align: center;">
+              <a href="wuxunlian@gmail.com">Email</a> &nbsp/&nbsp
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=sBvSsyYAAAAJ/">Google Scholar</a> &nbsp/&nbsp
+              <a href="https://twitter.com/yimeishan">Twitter</a> &nbsp/&nbsp
+              <a href="https://github.com/Xunlian-Wu/">Github</a> &nbsp/&nbsp
+              <a href="https://www.researchgate.net/profile/Xunlian_Wu/research">Researchgate</a>
+            </p>
+          </td>
+          <td style="padding: 2.5%; width: 40%; max-width: 40%;">
+            <a href="images/xunlianwu.png"><img style="width: 85%; max-width: 100%;" alt="profile photo" src="images/xunlianwu.png" class="hoverZoomLink"></a>
           </td>
         </tr>
       </tbody>
     </table>
+    <a id="news"></a>
+    <table>
+      <tbody>
+        <tr>
+          <td style="padding: 20px; width: 100%; vertical-align: middle;">
+            <heading>📰News</heading>
+            <ul class="projects-box" id="projects-box">
+              <li><b>[<font color="red">2024.03</font>]</b> ✌️ I received Research and Innovation Funds of Xidian University funding.</li>
+              <li><b>[<font color="red">2023.12</font>]</b> ✌️ I won Outstanding Graduate Student.</li>
+              <li><b>[<font color="red">2023.11</font>]</b> ✌️ I received Outstanding Doctoral Dissertation Funding.</li>
+              <li><b>[<font color="red">2023.10</font>]</b> ✌️ I won Tencent Social Scholarship.</li>
+              <li><b>[<font color="red">2023.10</font>]</b> ✌️ One paper has been accepted by <em>ESWA</em>.</li>
+              <li><b>[<font color="red">2023.09</font>]</b> ✌️ One paper has been accepted by <em>Physica A</em>.</li>
+              <li><b>[<font color="red">2022.12</font>]</b> ✌️ I won Outstanding Graduate Student.</li>
+              <li><b>[<font color="red">2022.10</font>]</b> ✌️ I won Tencent Social Scholarship.</li>
+              <li><b>[<font color="red">2022.09</font>]</b> ✌️ I won first-class scholarship for doctoral students.</li>
+              <li><b>[<font color="red">2022.05</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-KDE</em>.</li>
+              <li><b>[<font color="red">2022.02</font>]</b> ✌️ One paper has been accepted by <em>Physica A</em>.</li>
+              <li><b>[<font color="red">2021.09</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-PAMI</em>.</li>
+              <li><b>[<font color="red">2021.03</font>]</b> ✌️ One paper has been accepted by <em>IEEE T-CYB</em>.</li>
+              <p class="projects-show" id="projects-show"><span class="projects-show-text" id="projects-show-text">More</span></p>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a id="research"></a>
+    <table>
+      <tbody>
+        <tr>
+          <td style="padding: 20px; width: 100%; vertical-align: middle;">
+            <heading>👨🏻‍💻Research</heading>
+            <p>My research interests mainly include social network analysis, self-supervised learning and graph neural networks. I'm also interested in their applications such as community detection, influence maximization, deep graph clustering, recommendation and bioinformatics. <font color="red">* denotes corresponding author</font>. The selected papers are listed as follows:</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- paper_list -->
+    <table>
+      <tbody>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/DLTD.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/201367/preprint_pdf/ed79da65fd016277b76675643e40ffc4.pdf">
+              <papertitle>Dynamic linear threshold model with decay for influence spread</papertitle>
+            </a>
+            <br>
+            <strong>Xunlian Wu</strong>,
+            Anqi Zhang,
+            <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
+            Peng Gang Sun*
+            <br>
+            <em>TechRxiv</em>, 2024
+            <br>
+            <a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/201367/preprint_pdf/ed79da65fd016277b76675643e40ffc4.pdf">Paper</a>
+            /
+            <a href="">Code</a>
+            <p></p>
+            <p style="text-align: justify;">
+              The complexity of influence spread poses significant challenges to its accurate modeling. Traditional approaches, such as the Linear Threshold (LT) model, offer a simplified depiction of this phenomenon but overlook the temporal decay of influence. To address this limitation, we introduce a Dynamic Linear Threshold Model with Decay (DLTD), incorporating three distinct decay strategies: random decay, linear decay, and nonlinear decay. Comparative analyses on real-world datasets reveal that DLTD achieves superior accuracy over the LT model.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/DDGAE.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026842">
+              <papertitle>Deep Dual Graph attention Auto-Encoder for community detection</papertitle>
+            </a>
+            <br>
+            <strong>Xunlian Wu</strong>,
+            Wanying Lu,
+            <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
+            Peng Gang Sun*
+            <br>
+            <em>Expert Systems with Applications</em>, 2024.
+            <br>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026842">Paper</a>
+            /
+            <a href="https://doi.org/10.24433/CO.2474269.v1">Code</a>
+            <p></p>
+            <p style="text-align: justify;">
+              We propose an unsupervised method for community detection based on a Deep Dual Graph attention Auto-Encoder (DDGAE). For a graph, the DDGAE considers its attribute information and modularity information as two views, and learns a common representation based on a self-training process during which we can also determine the community assignment.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/GEMFP.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378437123007604">
+              <papertitle>Graph embedding based on motif-aware feature propagation for community detection</papertitle>
+            </a>
+            <br>
+            <strong>Xunlian Wu</strong>,
+            Han Zhang,
+            <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
+            Peng Gang Sun*
+            <br>
+            <em>Physica A: Statistical Mechanics and its Applications</em>, 2023
+            <br>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378437123007604">Paper</a>
+            /
+            <a href="https://github.com/zhanghan1020/GEMFP">Code</a>
+            <p></p>
+            <p style="text-align: justify;">
+              Identifying communities plays an essential role in disclosing modular structures with specific functions or properties in different kinds of complex networks. We develops a novel algorithm, Graph Embedding based on Motifaware Feature Propagation (GEMFP) for community detection. We conduct extensive experiments on 14 real-world datasets, and the results show that our algorithm tends to be more effective for community detection.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/RaidB.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9771068/">
+              <papertitle>Rearranging 'indivisible' blocks for community detection</papertitle>
+            </a>
+            <br>
+            Peng Gang Sun*,
+            <strong>Xunlian Wu</strong>,
+            <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>,
+            <br>
+            <em>IEEE Transactions on Knowledge and Data Engineering</em>, 2022
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9771068/">Paper</a>
+            /
+            <a href="https://github.com/Xunlian-Wu/RaidB">Code</a>
+            <p></p>
+            <p style="text-align: justify;">
+              Nowadays, communities strongly overlap due to the fact that people strongly interact, which makes community detection even more challenging. The paper develops a new algorithm by rearranging ‘indivisible’ blocks(RaidB). We compare RaidB with the existing state of the art methods for non-overlapping and overlapping community detection. The results show that RaidB tends to achieve better performance especially on sparse networks with unobvious communities and networks with strongly overlapping communities.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/IPM.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378437122001376">
+              <papertitle>Influence percolation method for overlapping community detection</papertitle>
+            </a>
+            <br>
+            Peng Gang Sun*,
+            <strong>Xunlian Wu</strong>,
+            <a href="https://web.xidian.edu.cn/ynquan/">Yining Quan</a>,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao</a>
+            <br>
+            <em>Physica A: Statistical Mechanics and its Applications</em>, 2022
+            <br>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378437122001376">Paper</a>
+            <p></p>
+            <p style="text-align: justify;">
+              Nowadays, boundaries between circles are more and more indistinct because people probably involve more than one circle. We develops an influence percolation method (IPM) for identifying overlapping communities. An interesting finding is that two nodes tend to be indivisible if one is a seed, influence percolates into the other exceeding a certain frequency, and this threshold is mainly determined by the networks’ density.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/Tel.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9543564/">
+              <papertitle>TelecomNet: Tag-based weakly-supervised modally cooperative hashing network for image retrieval</papertitle>
+            </a>
+            <br>
+            <a href="https://faculty.xidian.edu.cn/ZW6/zh_CN/index.htm">Wei Zhao</a>,
+            <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu, </a>
+            <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a>*,
+            <strong>Xunlian Wu</strong>,
+            Wanqing Zhao,
+            <a href="https://web.xidian.edu.cn/qgmiao/">Qiguang Miao, </a>
+            <a href="https://person.zju.edu.cn/0007101">Xiaofei He, </a>
+            <a href="https://web.xidian.edu.cn/wangquan/">Quan Wang</a>
+            <br>
+            <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 2021
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9543564/">Paper</a>
+            <p></p>
+            <p style="text-align: justify;">
+              We are concerned with using user-tagged images to learn proper hashing functions for image retrieval. However, tagging data suffers from noises, vagueness and incompleteness. Different from previous unsupervised or supervised hashing learning, we propose a novel weakly-supervised deep hashing framework which consists of two stages: weakly-supervised pre-training and supervised fine-tuning. The framework is general and does not depend on specific deep hashing methods.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; width: 25%; vertical-align: middle;">
+            <div class="one">
+              <img src='images/AIMC.png' width="160">
+            </div>
+          </td>
+          <td style="padding: 20px; width: 75%; vertical-align: middle;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9382955/">
+              <papertitle>Adversarial incomplete multiview subspace clustering networks</papertitle>
+            </a>
+            <br>
+            <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu, </a>
+            <a href="https://ai.ustb.edu.cn/szdw/xsszmjs/L/a991e2ba08ff4173ad16a5e9c406eb87.htm">Hongmin Liu</a>*,
+            <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan,</a>
+            <strong>Xunlian Wu</strong>,
+            Jiale Tan,
+            Beilei Ling
+            <br>
+            <em>IEEE Transactions on Cybernetics</em>, 2021
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9382955/">Paper</a>
+            <p></p>
+            <p style="text-align: justify;">
+              Most previous works assumed that each view has complete data. However, in real-world datasets, it is often the case that a view may contain some missing data, resulting in the problem of incomplete multiview clustering (IMC). We present the adversarial IMC (AIMC) framework. We explore two variants of AIMC: 1) AAIMC and 2) GAIMC with different strategies for learning multiview common representation. AAIMC tries to capture hidden information of the missing data by MDI via the elementwise reconstruction and the GAN. GAIMC directly searches the multiview comprehensive representation and infers the information of the missing views from the instances of the same cluster.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a id="project"></a>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody>
+        <tr>
+          <td>
+            <heading>💻Project</heading>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody>
+        <ul>
+          <li>Research and Innovation Funds of Xidian University: Research on Social Network Analysis and Community Detection Methods. [<font color="red"> NO.YISI24015</font>], <strong>Principal Investigator</strong></li>
+          <p></p>
+          <li>Outstanding Doctoral Dissertation Funding Project of Xidian University: Research on Influence Propagation and Community Detection Methods in Complex Networks. <strong>Principal Investigator</strong></li>
+          <p></p>
+          <li>National Natural Science Foundation of China: Research on Algorithms for Discovering Dynamic Controllability of Disease Networks and Pathogenic Factor-Related Patterns in the Context of Big Data. [<font color="red"> NO.61872432</font>], <strong>Participant</strong></li>
+          <p></p>
+          <li>National Natural Science Foundation of China: Analysis of Online Learning Behavior and Outcome Prediction Based on Knowledge Graphs. [<font color="red"> NO.6207021069</font>], <strong>Participant</strong></li>
+          <p></p>
+          <li>National Department Preliminary Research Project: A Certain Intelligent Cognitive Technology. [<font color="red"> NO.41412030502</font>], <strong>Participant</strong></li>
+          <p></p>
+          <li>Shaanxi Fundamental Science Research Project in Mathematics and Physics: Research on Renormalization of Big Data in Complex Networks and Hyperbolic Space Representation Learning Algorithms and Their Applications in Community Detection. [<font color="red"> NO.22JSY024</font>], <strong>Participant</strong></li>
+          <p></p>
+          <li>Central Universities Basic Scientific Research Fund Project: Research on Learning Resource Recommendation Methods Based on Community Structure and Deep Neural Networks. [<font color="red"> JB210303</font>], <strong>Participant</strong></li>
+        </ul>
+      </tbody>
+    </table>
+    <a id="experience"></a>
+    <table>
+      <tbody>
+        <tr>
+          <td style="padding: 20px; width: 100%; vertical-align: middle;">
+            <heading>🚀Experience</heading>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody>
+        <ul>
+          <li>PhD student @ <a href="https://en.xidian.edu.cn/">Xidian University</a>, supervised by Prof. <a href="https://web.xidian.edu.cn/">Peng Gang Sun</a>.</li>
+          <li>Master of Engineering @ <a href="https://en.xidian.edu.cn/">Xidian University</a>, working with <a href="https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm">Cai Xu</a>, supervised by Prof. <a href="https://web.xidian.edu.cn/zyguan/">Ziyu Guan</a>.</li>
+          <li>C++ Software Development Engineer @ <a href="https://en.kmerit.com/">Kmerit Co., Ltd.</a> and <a href="https://eng.spdb.com.cn/">SPD BANK</a>.</li>
+          <li>Bachelor of Engineering @ <a href="http://english.zzu.edu.cn/">Zhengzhou University</a>.</li>
+          <li>C++ Engineer Internship @ <a href="https://en.kmerit.com/">Kmerit Co., Ltd.</a></li>
+          <li>Vice Captain @ <a href="http://www5.zzu.edu.cn/wzb/index.htm">Zhengzhou University National Flag Guard Team</a>.</li>
+        </ul>
+      </tbody>
+    </table>
+    <a id="service"></a>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody>
+        <tr>
+          <td>
+            <heading>💁‍♂️Service</heading>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody>
+        <ul>
+          <li>Reviewer for KDD'24</li>
+          <li>Reviewer for ESWA</li>
+          <li>Reviewer for Physica A</li>
+          <li>Reviewer for Electronic Science and Technology(电子科技)</li>
+        </ul>
+      </tbody>
+    </table>
+    <a id="award"></a>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody>
+        <tr>
+          <td>
+            <heading>🏆Award</heading>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody>
+        <ul>
+          <li>Research and Innovation Funds of Xidian University(2024). [<a href="images/Research and Innovation Funds.pdf">PDF</a>]</li>
+          <li>Outstanding Doctoral Dissertation Funding(2023). [<a href="images/Outstanding Doctoral.pdf">PDF</a>]</li>
+          <li>Outstanding Graduate Student(2023). [<a href="images/National Scholarship 2022.pdf">PDF</a>]</li>
+          <li>Tencent Social Scholarship(2023). [<a href="images/Scholarship.pdf">PDF</a>]</li>
+          <li>Outstanding Graduate Student(2022). [<a href="images/Outstanding-22.pdf">PDF</a>]</li>
+          <li>Tencent Social Scholarship(2022). [<a href="images/Tencent-22.pdf">PDF</a>]</li>
+          <li>Outstanding Pandemic Voluntee. [<a href="images/yq.pdf">PDF</a>]</li>
+          <li>Scholarship, XDU. [<a href="images/Scholarship-22.pdf">PDF</a>]</li>
+        </ul>
+      </tbody>
+    </table>
+    <p align="center">Design and source code from <a href="https://jonbarron.info/">Jon Barron</a>'s website</p>
+    <script>
+      let show = false;
+      document.querySelector('#projects-show').onclick = function() {
+        if (!show) {
+          document.querySelector('#projects-box').style.height = 'auto';
+          document.querySelector('#projects-box').style.paddingBottom = '20px';
+          document.querySelector('#projects-show-text').innerHTML = 'Less';
+          show = true;
+        } else {
+          show = false;
+          document.querySelector('#projects-box').style.height = '160px';
+          document.querySelector('#projects-box').style.paddingBottom = '0px';
+          document.querySelector('#projects-show-text').innerHTML = 'More';
+        }
+      }
+    </script>
   </div>
 </body>
 </html>
